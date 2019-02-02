@@ -9,7 +9,7 @@
 \acmYear{2019}
 \setcopyright{acmlicensed}
 \acmConference[SER574 '19]{SER574 '19: Advanced Software Design}{January 20, 2019}{Mesa, AZ}
-\acmBooktitle{SER574 '19: Advanced Software Design, January 20, 2019, Mesa, AZ}
+\acmBooktitle{SER574 '19: Advanced Software Design, January 30, 2019, Mesa, AZ}
 \acmPrice{150.00}
 \acmDOI{12.1337/1122456.1122456}
 \acmISBN{978-1-4503-9999-9/18/06}
@@ -47,7 +47,7 @@ Agile, now a day is the most trending and adaptable standard in the software ind
 %
 % Keywords. The author(s) should pick words that accurately describe the work being
 % presented. Separate the keywords with commas.
-\keywords{Agile, Architecture, Requirements, Design, Design Principles, Incrementality, Sprint}
+\keywords{Agile, Architecture, Requirements, Design, Design Principles, Incrementality, Sprint, Scrum}
 
 %
 % This command processes the author and affiliation and title information and builds
@@ -55,13 +55,13 @@ Agile, now a day is the most trending and adaptable standard in the software ind
 \maketitle
 
 \section{Introduction}
-An agile team is a cross-functional group of people that have everything and everyone, necessary to produce a working, tested increment of product. Agile encourages a disciplined project management process that encourages frequent inspection and adaptation. A leadership philosophy that supports teamwork, self-organization and accountability, a set of engineering best practices intended to allow for rapid delivery of high-quality software, and a business approach that aligns development with customer needs and company goals.\cite{Agile01}
+An agile team is a cross-functional group of people that have everything and everyone, necessary to create a working product. Agile encourages a disciplined project management process that encourages frequent inspection and adaptation. A leadership philosophy that supports teamwork, self-organization and accountability, a set of engineering best practices intended to allow for rapid delivery of high-quality software, and a business approach that aligns development with customer needs and company goals.\cite{Agile01}
 
-Software architecture is the design and specification of the rules by which software will be built. It could be as high level as possible to give the overview of the project to extend the product. If the software has a lot of isolated components, then the architecture ensures that the system operates in an environment that supports components with isolated dependencies. It is more about the collective understanding of how a system should be built to respond to the change.
 
-Software Design act as a blueprint during the development. Having a correct and updated software design is must for the teams to work in an agile method. Software design may refer to either "all the activity involved in conceptualizing, framing, implementing, commissioning, and ultimately modifying complex systems" or "the activity following requirements specification and before programming, as in a stylized software engineering process.\cite{freeman01}
+Software Design and architecture act as a blueprint during the development. Having a correct and updated software design is must for the teams to work in an agile method. Software design may refer to either "all the activity involved in conceptualizing, framing, implementing, commissioning, and ultimately modifying complex systems" or "the activity following requirements specification and before programming, as in a stylized software engineering process.\cite{freeman01}
 
-In this paper, Section 2.1 describes the general idea of agile development. Section 2.2 focus on the primary steps involved in software design and architecture. The section 2.3 focuses on the impact of software design and architecture teams working in agile.
+
+In this paper, Section 2.1 describes the general idea of agile development. Section 2.2 focus on the primary steps involved in software design and architecture and section 2.3 focuses on the impact of software design and architecture teams working in agile.
 
 
 \section{MAIN}
@@ -88,28 +88,25 @@ The architecture and design of a project are important in an agile environment. 
 
 \subsection{Impact of Design and Architecture on Agile Teams}
 
-In agile, the architecture of software is developed in an iterative manner, beginning with enough definition for the team to start design and development. The architecture guides the team in a direction that gives the best chance for success.
+In agile, the design and architecture of software are developed in an iterative manner, beginning with enough definition for the team to start design and development. The architecture guides the team in a direction that gives the best chance for success.
 
-There is a trade-off between allowing a team to choose what makes sense for their project while ensuring they don’t pick technologies that are incompatible with the rest of the enterprise. This trade-off makes sure the team builds software that aligns to the overall enterprise architecture.
+\subsubsection{Team Collaboration and Sprint}
 
-Like any mature agile process, an agile approach to architecture relies on doing just enough definition up front to get started, gathering feedback as we go, adjusting as needed, and iterating frequently to keep architecture and design in sync with the emerging application.
+There is a trade-off between allowing a team to choose what makes sense for their project while ensuring they don’t pick technologies that are incompatible with the rest of the enterprise. This trade-off makes sure the team builds software that aligns to the overall enterprise architecture. Agile Teams get feedback from other inter-dependent teams, adjusting and iterating as needed to keep up with customer’s expectation in the product.
+ 
+Prior to the first sprint, a high-level enterprise or system architecture is created and discussed among team members to get everyone on-board. As part of each sprint kickoff, a team-based design is used to update the as-is design from the last sprint to account for feature additions and enhancements that will be made in the current sprint. As stories are tasked out for development and testing, the team will use this new “to be” design to help determine what will need to be implemented in order to satisfy the expected design. \cite{Architecture01}
 
-Prior to the first sprint, a high-level enterprise or system architecture should be created (if it doesn’t already exist) and discussed. As part of each sprint kickoff, a team-based design is used to update the as-is design from the last sprint to account for feature additions and enhancements that will be made in the current sprint. As stories are tasked out for development and testing, the team will use this new “to be” design to help determine what will need to be implemented in order to satisfy the expected design.
+Sprint review meetings present how each story fits into the bigger picture of the whole application and the enterprise. Sprint retrospectives include architecture and design in the discussions of what is working and what isn’t.
 
-Sprint review meetings should present how each story fits into the bigger picture of the whole application and the enterprise. Sprint retrospectives should include architecture and design in the discussions of what is working and what isn’t.
+\subsubsection{Scrum Approach and Communication}
 
-In all facets, architecture should be treated like any other part of the agile process:\cite{Architecture01}
-\begin{itemize}
-\item{} By starting with experienced architects and industry best practices, we can integrate the project requirements with the enterprise requirements and standards to be confident in a good foundation
-\item{} By incorporating retrospection and review in the process, we can make minor adjustments to both the architecture and the software being developed to ensure that we meet the enterprise's needs
-\item{} By driving that feedback using quality tools, security tools, testing, and other objective metrics, we ensure that we aren't reacting to guesses and anecdotal evidence
-\item{} By reflecting and evaluating continuously, the course corrections remain minor and incremental and can adjust to changing architecture requirements throughout the life of the project and as needs evolve
-\item{} By collaborating with the development teams, we can be sure the architecture reflects real-world needs and isn’t just an “ivory tower” architectural approach that makes sense on paper but fails in actual use.
-\item{} For an organization transitioning to agile development, creating software architecture isn’t incompatible with your new processes. Consider the principles in the Agile Manifesto, involve team members who will be using the architecture in its development, and reflect and adapt often, and you will end up with an architecture that meets the needs of your team and your enterprise.
-\end{itemize}
+It is more likely that the central control system will break down once the system is more complex. 
+To avoid this, big projects always decentralize to relinquish the control to the teams in agile. This also provides a time-honoured approach to deal with the complexity of the project.\cite{book01} Scrum shortens the feedback-loop between customer and developer among the wish list and implementation which increases transparency and trust. Agile teams following scrum do not focus on delivering just any increment of business value; also focuses on delivering the highest priority business value defined by the customer.
+
+
 
 \section{Conclusion}
-Software development projects which involve high speed, rapid changes and huge budgets not only need a good agile practice or methodology to finish the project successfully but also needs good architecture and design practices to finish the project on time and at expected costs. Architecture and design of a project go hand in hand and are important so as to give the project the sense of direction that it needs.
+Software development projects which involve high speed, rapid changes and huge budgets not only need a good agile team collaboration to finish the project successfully but also needs good architecture and design practices to finish the project on time and at expected costs.  Collaboration across agile team through scrum provides efficiency and freedom to divide the tough tasks to a simple one. This also provides collaboration of different technology in the same project by increasing the reliability, modularity, and customer stratifications. Therefore, architecture and design of a project go hand in hand and are important so as to give the project the sense of direction that it needs.
 
 %
 % The next two lines define the bibliography style to be used, and the bibliography file.
